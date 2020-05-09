@@ -124,7 +124,7 @@ namespace ShopWPF
             }
             reader.Close();
             con.Close();
-            return flowers;
+            return histories;
         }
         public void RemoveCustomer(Customer customer)
         {

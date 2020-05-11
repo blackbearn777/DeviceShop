@@ -5,6 +5,6 @@ namespace ShopWPF
         Phone,
         TV,
         Laptop
-        
+
     }
 }

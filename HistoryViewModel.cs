@@ -1,11 +1,20 @@
-public class HistoryViewModel
+namespace ShopWPF
 {
-    public DbConnector connection;
-    public List<SalesHistory> AllHistory { get; set; }
-    public HistoryViewModel(DbConnector connector)
-    {
-        connection = connection;
-        AllHistory = connection.GetHistory();
 
+
+    public class HistoryViewModel
+    {
+        public DbConnector connection;
+        public List<SalesHistory> AllHistory
+        {
+            get;
+            set;
+        }
+        public HistoryViewModel(DbConnector connector)
+        {
+            connection = connection;
+            AllHistory = connection.GetHistory();
+
+        }
     }
 }

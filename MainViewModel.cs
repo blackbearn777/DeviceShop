@@ -1,10 +1,18 @@
-public class MainViewModel
+namespace ShopWPF
 {
-    public List<Device> AllDevices{get;set;}
-    public MainViewModel(DbConnector connector)
+
+
+    public class MainViewModel
     {
-        AllDevices = connector.GetDevice();
+        public List<Device> AllDevices
+        {
+            get;
+            set;
+        }
+        public MainViewModel(DbConnector connector)
+        {
+            AllDevices = connector.GetDevice();
+        }
+
     }
-    
-    
 }
